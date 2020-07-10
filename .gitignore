@@ -4,3 +4,6 @@
 .jekyll-cache
 _site
 Gemfile.lock
+_drafts
+_posts/tech
+_posts/other
