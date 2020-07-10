@@ -1,0 +1,43 @@
+title: Coder's Coffee House
+email: matthew.blott@gmail.com
+description: >- # this means to ignore newlines until 'baseurl:''
+  Coder's Coffee House is a blog mainly focused on tech and software development but occasionaly other things of interest.
+baseurl: ''
+url: ''
+twitter_username: matthewblott
+github_username:  matthewblott
+youtube_username: matthewblott
+facebook_username: matthew.blott
+google_analytics: UA-77648562-1
+
+defaults:
+  -
+    scope:
+      path: "other" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "default"
+
+gems: [jekyll-assets, jekyll-paginate-v2, jekyll-seo-tag]
+
+plugins:
+  - jekyll-assets
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  # trail: 
+  #   before: 2
+  #   after: 2
+  # indexpage: 'index'
+
+exclude:
+  - Gemfile
+  - _helper.rb
